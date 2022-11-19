@@ -1,0 +1,42 @@
+<section>
+    <header>
+        <h1>Sointukulut</h1>
+    </header>
+    <article *ngFor="let chord of chords">
+        <header><h1>{{chord.name}}</h1></header>
+        <h2>Duurit</h2>
+        <div *ngFor="let duurit of chord.duurit; let i = index">
+            <span>{{(i === 2) ? duurit.name.replace('m', ''): duurit.name}}<sup *ngIf="i === 2">7</sup></span>
+        </div>
+        <h2>Mollit</h2>
+        <div *ngFor="let mollit of chord.mollit; let i = index">
+            <span>{{(mollit.name.includes('m')) ? mollit.name : mollit.name + 'm'}}<sup *ngIf="i === 2">7</sup></span>
+        </div>
+    </article>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Sointu otteet Duurit</h1>
+    </header>
+    <article *ngFor="let chord of chords">
+        <header><h1>{{chord.name}}</h1></header>
+        <div class="{{chord}}">
+            <div *ngFor="let duuri of chord.duurit">
+                <div class="{{duuri.class}}"></div>
+            </div>
+        </div>
+    </article>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Sointu otteet Mollit</h1>
+    </header>
+    <article *ngFor="let chord of chords">
+        <header><h1>{{chord.name}}</h1></header>
+        <div class="{{chord}}">
+            <div *ngFor="let duuri of chord.mollit">
+                <div class="{{duuri.class}}"></div>
+            </div>
+        </div>
+    </article>
+</section>

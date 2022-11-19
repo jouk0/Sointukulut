@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#chordArea1, #chordArea2 {
+    padding: 20px;
+    border: 1px solid #AAA;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#chordArea2 canvas {
+    max-height: 120px;
+}
+
+canvas.chord-diagram {
+    max-height: 115px;
+}
