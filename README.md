@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Content image
 
-![alt text](readme/localhost_4200_(iPad Air).png?raw=true)
+![alt text](https://raw.githubusercontent.com/jouk0/Sointukulut/main/readme/localhost_4200_(iPad%20Air).png)
