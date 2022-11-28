@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./perus-sointukulut.component.scss']
 })
 export class PerusSointukulutComponent {
-
   public chords: Array<any> = [{
     name: 'C',
     duurit: [],
@@ -96,187 +95,280 @@ export class PerusSointukulutComponent {
   }]
   public allChords: Array<any> = [{
     name: 'C',
-    class: 'cee'
+    class: 'cee',
+    color: '#ff0000'
   },{
     name: 'Cm',
-    class: 'ceeMinor'
+    class: 'ceeMinor',
+    color: '#ff0000'
   },{
     name: 'C#',
-    class: 'ceeCharp'
+    class: 'ceeCharp',
+    color: '#ff5b22'
   },{
     name: 'D',
-    class: 'dee'
+    class: 'dee',
+    color: '#ff8000'
   },{
     name: 'Dm',
-    class: 'deeMinor'
+    class: 'deeMinor',
+    color: '#ff8000'
   },{
     name: 'D#',
-    class: 'deeCharp'
+    class: 'deeCharp',
+    color: '#ff9700'
   },{
     name: 'E',
-    class: 'eee'
+    class: 'eee',
+    color: '#ffff00'
   },{
     name: 'Em',
-    class: 'eeeMinor'
+    class: 'eeeMinor',
+    color: '#ffff00'
   },{
     name: 'F',
-    class: 'eff'
+    class: 'eff',
+    color: '#7dff00'
   },{
     name: 'Fm',
-    class: 'effMinor'
+    class: 'effMinor',
+    color: '#7dff00'
   },{
     name: 'F#',
-    class: 'effSharp'
+    class: 'effSharp',
+    color: '#00fe00'
+  },{
+    name: 'F#m',
+    class: 'effSharpMinor',
+    color: '#00fe00'
   },{
     name: 'G',
-    class: 'gee'
+    class: 'gee',
+    color: '#00fbfe'
   },{
     name: 'Gm',
-    class: 'geeMinor'
+    class: 'geeMinor',
+    color: '#00fbfe'
   },{
     name: 'G#',
-    class: 'geeSharp'
+    class: 'geeSharp',
+    color: '#0000ff'
+  },{
+    name: 'G#m',
+    class: 'geeSharpMinor',
+    color: '#0000ff'
   },{
     name: 'A',
-    class: 'aue'
+    class: 'aue',
+    color: '#4c00db'
   },{
     name: 'Am',
-    class: 'aueMinor'
+    class: 'aueMinor',
+    color: '#4c00db'
   },{
     name: 'A#',
-    class: 'aueSharp'
+    class: 'aueSharp',
+    color: '#9e00b3'
+  },{
+    name: 'A#m',
+    class: 'aueSharpMinor',
+    color: '#9e00b3'
   },{
     name: 'H',
-    class: 'eich'
+    class: 'eich',
+    color: '#ff0075'
   },{
     name: 'Hm',
-    class: 'eichMinor'
+    class: 'eichMinor',
+    color: '#ff0075'
   },{
     name: 'C',
-    class: 'cee'
+    class: 'cee',
+    color: '#ff0000'
   },{
     name: 'Cm',
-    class: 'ceeMinor'
+    class: 'ceeMinor',
+    color: '#ff0000'
   },{
     name: 'C#',
-    class: 'ceeCharp'
+    class: 'ceeCharp',
+    color: '#ff5b22'
   },{
     name: 'D',
-    class: 'dee'
+    class: 'dee',
+    color: '#ff8000'
   },{
     name: 'Dm',
-    class: 'deeMinor'
+    class: 'deeMinor',
+    color: '#ff8000'
   },{
     name: 'D#',
-    class: 'deeCharp'
+    class: 'deeCharp',
+    color: '#ff9700'
   },{
     name: 'E',
-    class: 'eee'
+    class: 'eee',
+    color: '#ffff00'
   },{
     name: 'Em',
-    class: 'eeeMinor'
+    class: 'eeeMinor',
+    color: '#ffff00'
   },{
     name: 'F',
-    class: 'eff'
+    class: 'eff',
+    color: '#7dff00'
   },{
     name: 'Fm',
-    class: 'effMinor'
+    class: 'effMinor',
+    color: '#7dff00'
   },{
     name: 'F#',
-    class: 'effSharp'
+    class: 'effSharp',
+    color: '#00fe00'
+  },{
+    name: 'F#m',
+    class: 'effSharpMinor',
+    color: '#00fe00'
   },{
     name: 'G',
-    class: 'gee'
+    class: 'gee',
+    color: '#00fbfe'
   },{
     name: 'Gm',
-    class: 'geeMinor'
+    class: 'geeMinor',
+    color: '#00fbfe'
   },{
     name: 'G#',
-    class: 'geeSharp'
+    class: 'geeSharp',
+    color: '#0000ff'
+  },{
+    name: 'G#m',
+    class: 'geeSharpMinor',
+    color: '#0000ff'
   },{
     name: 'A',
-    class: 'aue'
+    class: 'aue',
+    color: '#4c00db'
   },{
     name: 'Am',
-    class: 'aueMinor'
+    class: 'aueMinor',
+    color: '#4c00db'
   },{
     name: 'A#',
-    class: 'aueSharp'
+    class: 'aueSharp',
+    color: '#9e00b3'
+  },{
+    name: 'A#m',
+    class: 'aueSharpMinor',
+    color: '#9e00b3'
   },{
     name: 'H',
-    class: 'eich'
+    class: 'eich',
+    color: '#ff0075'
   },{
     name: 'Hm',
-    class: 'eichMinor'
+    class: 'eichMinor',
+    color: '#ff0075'
   },{
     name: 'C',
-    class: 'cee'
+    class: 'cee',
+    color: '#ff0000'
   },{
     name: 'Cm',
-    class: 'ceeMinor'
+    class: 'ceeMinor',
+    color: '#ff0000'
   },{
     name: 'C#',
-    class: 'ceeCharp'
+    class: 'ceeCharp',
+    color: '#ff5b22'
   },{
     name: 'D',
-    class: 'dee'
+    class: 'dee',
+    color: '#ff8000'
   },{
     name: 'Dm',
-    class: 'deeMinor'
+    class: 'deeMinor',
+    color: '#ff8000'
   },{
     name: 'D#',
-    class: 'deeCharp'
+    class: 'deeCharp',
+    color: '#ff9700'
   },{
     name: 'E',
-    class: 'eee'
+    class: 'eee',
+    color: '#ffff00'
   },{
     name: 'Em',
-    class: 'eeeMinor'
+    class: 'eeeMinor',
+    color: '#ffff00'
   },{
     name: 'F',
-    class: 'eff'
+    class: 'eff',
+    color: '#7dff00'
   },{
     name: 'Fm',
-    class: 'effMinor'
+    class: 'effMinor',
+    color: '#7dff00'
   },{
     name: 'F#',
-    class: 'effSharp'
+    class: 'effSharp',
+    color: '#00fe00'
+  },{
+    name: 'F#m',
+    class: 'effSharpMinor',
+    color: '#00fe00'
   },{
     name: 'G',
-    class: 'gee'
+    class: 'gee',
+    color: '#00fbfe'
   },{
     name: 'Gm',
-    class: 'geeMinor'
+    class: 'geeMinor',
+    color: '#00fbfe'
   },{
     name: 'G#',
-    class: 'geeSharp'
+    class: 'geeSharp',
+    color: '#0000ff'
+  },{
+    name: 'G#m',
+    class: 'geeSharpMinor',
+    color: '#0000ff'
   },{
     name: 'A',
-    class: 'aue'
+    class: 'aue',
+    color: '#4c00db'
   },{
     name: 'Am',
-    class: 'aueMinor'
+    class: 'aueMinor',
+    color: '#4c00db'
   },{
     name: 'A#',
-    class: 'aueSharp'
+    class: 'aueSharp',
+    color: '#9e00b3'
+  },{
+    name: 'A#m',
+    class: 'aueSharpMinor',
+    color: '#9e00b3'
   },{
     name: 'H',
-    class: 'eich'
+    class: 'eich',
+    color: '#ff0075'
   },{
     name: 'Hm',
-    class: 'eichMinor'
+    class: 'eichMinor',
+    color: '#ff0075'
   }]
   constructor() {
     this.chords.forEach((elem:any, ind:number) => {
       this.allChords.forEach((elem2:any, ind2:number) => {
-        if(ind2 > 18 && ind2 < 37) {
+        if(ind2 > 18 && ind2 < 41) {
           if(elem.name === elem2.name) {
             elem.duurit.push(this.allChords[ind2])
             elem.duurit.push(this.allChords[ind2+8])
             elem.duurit.push(this.allChords[ind2+12])
-            elem.mollit.push(this.allChords[ind2-4])
+            elem.mollit.push(this.allChords[ind2-6])
             elem.mollit.push(this.allChords[ind2+4])
-            elem.mollit.push(this.allChords[ind2+7])
+            elem.mollit.push(this.allChords[ind2+6])
           }
         }
       })

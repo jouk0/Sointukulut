@@ -6,12 +6,12 @@
     <article *ngFor="let chord of chords">
         <header><h1>{{chord.name}}</h1></header>
         <h2>Duurit</h2>
-        <div *ngFor="let duurit of chord.duurit; let i = index">
-            <span>{{(i === 2) ? duurit.name.replace('m', ''): duurit.name}}<sup *ngIf="i === 2">7</sup></span>
+        <div class="talukko" *ngFor="let duurit of chord.duurit; let i = index">
+            <span style="color: {{duurit.color}}">{{(i === 2) ? duurit.name.replace('m', ''): duurit.name}}<sup *ngIf="i === 2">7</sup></span>
         </div>
         <h2>Mollit</h2>
-        <div *ngFor="let mollit of chord.mollit; let i = index">
-            <span>{{(mollit.name.includes('m')) ? mollit.name : mollit.name + 'm'}}<sup *ngIf="i === 2">7</sup></span>
+        <div class="talukko" *ngFor="let mollit of chord.mollit; let i = index">
+            <span style="color: {{mollit.color}}">{{(mollit.name.includes('m')) ? mollit.name : mollit.name + 'm'}}<sup *ngIf="i === 2">7</sup></span>
         </div>
     </article>
 </section>

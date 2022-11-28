@@ -6,7 +6,7 @@ declare const ChordDiagram:any;
   styleUrls: ['./etusivu.component.scss']
 })
 export class EtusivuComponent implements OnInit {
-  
+
   constructor() {}
 
   ngOnInit(): void {
@@ -53,6 +53,7 @@ export class EtusivuComponent implements OnInit {
       const effSharpMinor = document.querySelectorAll('div.effSharpMinor')
       const effSharpSeven = document.querySelectorAll('div.effSharpSeven')
       const effSharpMinorSeven = document.querySelectorAll('div.effSharpMinorSeven')
+      const effSharpMinorMinorSeven = document.querySelectorAll('div.effSharpMinorMinorSeven')
       const effMajor7 = document.querySelectorAll('div.effMajor7')
       const effDim = document.querySelectorAll('div.effDim')
       const effNine = document.querySelectorAll('div.effNine')
@@ -79,6 +80,7 @@ export class EtusivuComponent implements OnInit {
       const aueMinor = document.querySelectorAll('div.aueMinor')
       const aueMinorSeven = document.querySelectorAll('div.aueMinorSeven')
       const aueSharp = document.querySelectorAll('div.aueSharp')
+      const aueSharpMinor = document.querySelectorAll('div.aueSharpMinor')
       const aueSharpSeven = document.querySelectorAll('div.aueSharpSeven')
       const aueSharpMinorSeven = document.querySelectorAll('div.aueSharpMinorSeven')
       const aueMajor7 = document.querySelectorAll('div.aueMajor7')
@@ -223,6 +225,9 @@ export class EtusivuComponent implements OnInit {
       effSharpMinorSeven.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'F#m7', positions: [2, 4, 2, 2, 2, 2], dotColor: '#00fe00'})
       })
+      effSharpMinorMinorSeven.forEach((elem: any, ind:number) => {
+        chords2.push({parentElement: elem, name: 'F#m7', positions: [2, 4, 2, 2, 2, 2], dotColor: '#00fe00'})
+      })
       effMajor7.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'Fmaj7', positions: [-1, -1, 3, 2, 1, 0], dotColor: '#00fe00'})
       })
@@ -300,6 +305,9 @@ export class EtusivuComponent implements OnInit {
       })
       aueSharp.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'A#', positions: [6, 8, 8, 7, 6, 6], dotColor: '#9e00b3'})
+      })
+      aueSharpMinor.forEach((elem: any, ind:number) => {
+        chords2.push({parentElement: elem, name: 'A#m', positions: [6, 8, 8, 6, 6, 6], dotColor: '#9e00b3'})
       })
       aueSharpSeven.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'A#7', positions: [6, 8, 6, 7, 6, 6], dotColor: '#9e00b3'})
