@@ -120,21 +120,20 @@
         </tbody>
     </table>
 </section>
-
 <section class="chordDiagrams" *ngFor="let page of perusSointukulkuData; let pagei = index">
     <header>
         <h1>Sanoitukset sapluuna {{page.name}}</h1>
         <h2 class="page">Sivu {{(26 + (pagei))}}</h2>
     </header>
     <div>
-        <article class="full special">
+        <article class="full special perus">
             <header><h1>Soinnut: {{page.name}}</h1></header>
             <div class="{{page.name}}">
                 <div *ngFor="let duuri of page.duurit; let i = index">
-                    <div class="{{(i === 2) ? duuri.class.replace('Minor', '') + 'Seven' : duuri.class}} small"></div>
+                    <div class="{{(i === 2) ? duuri.class.replace('Minor', '') + 'Seven' : duuri.class}} small2"></div>
                 </div>
                 <div *ngFor="let molli of page.mollit; let i = index">
-                    <div class="{{(i === 2) ? (!molli.class.includes('Sharp')) ? (!molli.class.includes('Minor')) ? molli.class + 'MinorSeven' : molli.class + 'Seven' : molli.class + 'MinorSeven' : (molli.class.includes('Minor')) ? molli.class : molli.class + 'Minor'}} small"></div>
+                    <div class="{{(i === 2) ? (!molli.class.includes('Sharp')) ? (!molli.class.includes('Minor')) ? molli.class + 'MinorSeven' : molli.class + 'Seven' : molli.class + 'MinorSeven' : (molli.class.includes('Minor')) ? molli.class : molli.class + 'Minor'}} small2"></div>
                 </div>
             </div>
         </article>

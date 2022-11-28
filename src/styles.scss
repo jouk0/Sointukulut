@@ -14,8 +14,12 @@ html, body {
     border-radius: 10px;
 }
 div {
+    &.small2 {
+        canvas.chord-diagram {
+            max-height: 120px;
+        }
+    }
     &.small {
-        
         canvas.chord-diagram {
             max-height: 100px;
         }
