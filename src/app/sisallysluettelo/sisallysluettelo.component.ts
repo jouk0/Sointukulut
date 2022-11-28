@@ -38,7 +38,7 @@ export class SisallysluetteloComponent {
     nimi: 'Voima sointu riffit',
     sivut: '11-12'
   },{
-    nimi: 'Sanoitukset',
-    sivut: '13-25'
+    nimi: 'Sanoitukset ohjeet ja sapluunat',
+    sivut: '13-37'
   }]
 }

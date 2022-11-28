@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { BackendService } from '../backend.service'
 @Component({
   selector: 'app-sanoitus-ohje',
   templateUrl: './sanoitus-ohje.component.html',
@@ -416,5 +416,13 @@ export class SanoitusOhjeComponent {
       color: '#ff5b22'
     }]
   }]
-  
+  public perusSointukulkuData: Array<any> = []
+  constructor(private backend: BackendService) {
+    this.backend.perusSointuKulkuDataOsbserver.subscribe((response:any) => {
+      if(response) {
+        console.log(response)
+        this.perusSointukulkuData = response
+      }
+    })
+  }
 }

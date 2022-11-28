@@ -120,3 +120,64 @@
         </tbody>
     </table>
 </section>
+
+<section class="chordDiagrams" *ngFor="let page of perusSointukulkuData; let pagei = index">
+    <header>
+        <h1>Sanoitukset sapluuna {{page.name}}</h1>
+        <h2 class="page">Sivu {{(26 + (pagei))}}</h2>
+    </header>
+    <div>
+        <article class="full special">
+            <header><h1>Soinnut: {{page.name}}</h1></header>
+            <div class="{{page.name}}">
+                <div *ngFor="let duuri of page.duurit; let i = index">
+                    <div class="{{duuri.class}} small"></div>
+                </div>
+                <div *ngFor="let molli of page.mollit; let i = index">
+                    <div class="{{molli.class}} small"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <h2>Sanoituksen runko</h2>
+    <table [cellSpacing]="0" [cellPadding]="0" class="template">
+        <thead>
+            <tr>
+                <th>Alku</th>
+                <th>Loppu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h2>Säkeistö A | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 5 sec</h3>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Säkeistö B | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 5 sec</h3>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                </td>
+                <td>
+                    <h2>Silta | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Silta | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

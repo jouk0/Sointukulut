@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { BackendService } from '../backend.service'
 
 @Component({
   selector: 'app-perus-sointukulut',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./perus-sointukulut.component.scss']
 })
 export class PerusSointukulutComponent {
+
   public chords: Array<any> = [{
     name: 'C',
     duurit: [],
@@ -358,7 +360,9 @@ export class PerusSointukulutComponent {
     class: 'eichMinor',
     color: '#ff0075'
   }]
-  constructor() {
+  constructor(
+    private backend: BackendService
+  ) {
     this.chords.forEach((elem:any, ind:number) => {
       this.allChords.forEach((elem2:any, ind2:number) => {
         if(ind2 > 18 && ind2 < 41) {
@@ -373,5 +377,6 @@ export class PerusSointukulutComponent {
         }
       })
     })
+    this.backend.setPerusSointuKulkuData(this.chords)
   }
 }
