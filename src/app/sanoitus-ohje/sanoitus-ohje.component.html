@@ -65,7 +65,7 @@
 </section>
 <section class="chordDiagrams" *ngFor="let page of powerChordRiffitKaikki; let pagei = index">
     <header>
-        <h1>Sanoitukset esimerkki {{page.name}}</h1>
+        <h1>Sanoitukset sapluuna {{page.name}}</h1>
         <h2 class="page">Sivu {{(14 + (pagei))}}</h2>
     </header>
     <div>
@@ -89,30 +89,30 @@
         <tbody>
             <tr>
                 <td>
-                    <h2>Säkeistö A | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></h2>
+                    <h2>Säkeistö A | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 5 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i >= 3">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Säkeistö B | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></h2>
+                    <h2>Säkeistö B | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 5 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i >= 3">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
                 </td>
                 <td>
-                    <h2>Silta | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></h2>
+                    <h2>Silta | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i >= 3">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Silta | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></h2>
+                    <h2>Silta | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span *ngIf="i >= 3">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
                 </td>

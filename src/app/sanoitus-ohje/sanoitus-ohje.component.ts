@@ -11,292 +11,377 @@ export class SanoitusOhjeComponent {
     name: 'C',
     chords: [{
       name: 'C',
-      class: 'cee'
+      class: 'cee',
+      color: '#ff0000'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'D#',
-      class: 'deeCharp'
+      class: 'deeCharp',
+      color: '#ff9700'
     },{
       name: 'F',
-      class: 'eff'
+      class: 'eff',
+      color: '#ffff00'
     },{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     },{
       name: 'A',
-      class: 'aue'
+      class: 'aue',
+      color: '#4c00db'
     },{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     }]
   },{
     name: 'C#',
     chords: [{
       name: 'C#',
-      class: 'ceeCharp'
+      class: 'ceeCharp',
+      color: '#ff5b22'
     },{
       name: 'D#',
-      class: 'deeCharp'
+      class: 'deeCharp',
+      color: '#ff9700'
     },{
       name: 'E',
-      class: 'eee'
+      class: 'eee',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     },{
       name: 'G#',
-      class: 'geeSharp'
+      class: 'geeSharp',
+      color: '#0000ff'
     },{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     },{
       name: 'H',
-      class: 'eich'
+      class: 'eich',
+      color: '#ff0075'
     }]
   },{
     name: 'D',
     chords: [{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'E',
-      class: 'eee'
+      class: 'eee',
+      color: '#ffff00'
     },{
       name: 'F',
-      class: 'eff'
+      class: 'eff',
+      color: '#ffff00'
     },{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     },{
       name: 'A',
-      class: 'aue'
+      class: 'aue',
+      color: '#4c00db'
     },{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     },{
       name: 'C',
-      class: 'cee'
+      class: 'cee',
+      color: '#ff0000'
     }]
   },{
     name: 'D#',
     chords: [{
       name: 'D#',
-      class: 'deeCharp'
+      class: 'deeCharp',
+      color: '#ff9700'
     },{
       name: 'F',
-      class: 'eff'
+      class: 'eff',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     },{
       name: 'G#',
-      class: 'geeSharp'
+      class: 'geeSharp',
+      color: '#0000ff'
     },{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     },{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     },{
       name: 'G#',
-      class: 'geeSharp'
+      class: 'geeSharp',
+      color: '#0000ff'
     }]
   },{
     name: 'E',
     chords: [{
       name: 'E',
-      class: 'eee'
+      class: 'eee',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     },{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     },{
       name: 'A',
-      class: 'aue'
+      class: 'aue',
+      color: '#4c00db'
     },{
       name: 'H',
-      class: 'eich'
+      class: 'eich',
+      color: '#ff0075'
     },{
       name: 'C#',
-      class: 'ceeCharp'
+      class: 'ceeCharp',
+      color: '#ff5b22'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     }]
   },{
     name: 'F',
     chords: [{
       name: 'F',
-      class: 'eff'
+      class: 'eff',
+      color: '#ffff00'
     },{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     },{
       name: 'G#',
-      class: 'geeSharp'
+      class: 'geeSharp',
+      color: '#0000ff'
     },{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     },{
       name: 'C#',
-      class: 'ceeCharp'
+      class: 'ceeCharp',
+      color: '#ff5b22'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'D#',
-      class: 'deeCharp'
+      class: 'deeCharp',
+      color: '#ff9700'
     }]
   },{
     name: 'F#',
     chords: [{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     },{
       name: 'G#',
-      class: 'geeSharp'
+      class: 'geeSharp',
+      color: '#0000ff'
     },{
       name: 'A',
-      class: 'aue'
+      class: 'aue',
+      color: '#4c00db'
     },{
       name: 'H',
-      class: 'eich'
+      class: 'eich',
+      color: '#ff0075'
     },{
       name: 'C#',
-      class: 'ceeCharp'
+      class: 'ceeCharp',
+      color: '#ff5b22'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'E',
-      class: 'eee'
+      class: 'eee',
+      color: '#ffff00'
     }]
   },{
     name: 'G',
     chords: [{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     },{
       name: 'A',
-      class: 'aue'
+      class: 'aue',
+      color: '#4c00db'
     },{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     },{
       name: 'C',
-      class: 'cee'
+      class: 'cee',
+      color: '#ff0000'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'E',
-      class: 'eee'
+      class: 'eee',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     }]
   },{
     name: 'G#',
     chords: [{
       name: 'G#',
-      class: 'geeSharp'
+      class: 'geeSharp',
+      color: '#0000ff'
     },{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     },{
       name: 'H',
-      class: 'eich'
+      class: 'eich',
+      color: '#ff0075'
     },{
       name: 'C#',
-      class: 'ceeCharp'
+      class: 'ceeCharp',
+      color: '#ff5b22'
     },{
       name: 'D#',
-      class: 'deeCharp'
+      class: 'deeCharp',
+      color: '#ff9700'
     },{
       name: 'F',
-      class: 'eff'
+      class: 'eff',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     }]
   },{
     name: 'A',
     chords: [{
       name: 'A',
-      class: 'aue'
+      class: 'aue',
+      color: '#4c00db'
     },{
       name: 'H',
-      class: 'eich'
+      class: 'eich',
+      color: '#ff0075'
     },{
       name: 'C',
-      class: 'cee'
+      class: 'cee',
+      color: '#ff0000'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'E',
-      class: 'eee'
+      class: 'eee',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     },{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     }]
   },{
     name: 'A#',
     chords: [{
       name: 'A#',
-      class: 'aueSharp'
+      class: 'aueSharp',
+      color: '#9e00b3'
     },{
       name: 'C',
-      class: 'cee'
+      class: 'cee',
+      color: '#ff0000'
     },{
       name: 'C#',
-      class: 'ceeCharp'
+      class: 'ceeCharp',
+      color: '#ff5b22'
     },{
       name: 'D#',
-      class: 'deeCharp'
+      class: 'deeCharp',
+      color: '#ff9700'
     },{
       name: 'F',
-      class: 'eff'
+      class: 'eff',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     },{
       name: 'G#',
-      class: 'geeSharp'
+      class: 'geeSharp',
+      color: '#0000ff'
     }]
   },{
     name: 'H',
     chords: [{
       name: 'H',
-      class: 'eich'
+      class: 'eich',
+      color: '#ff0075'
     },{
       name: 'C#',
-      class: 'ceeCharp'
+      class: 'ceeCharp',
+      color: '#ff5b22'
     },{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     },{
       name: 'E',
-      class: 'eee'
+      class: 'eee',
+      color: '#ffff00'
     },{
       name: 'F#',
-      class: 'effSharp'
+      class: 'effSharp',
+      color: '#00fe00'
     },{
       name: 'G',
-      class: 'gee'
+      class: 'gee',
+      color: '#00fbfe'
     },{
       name: 'A',
-      class: 'aue'
+      class: 'aue',
+      color: '#4c00db'
     }]
   }]
   public powerChordRiffit: Array<any> = [{
