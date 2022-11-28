@@ -10,7 +10,10 @@
     </footer>
 </section>
 <section>
-    <h1>Sisällysluettelo</h1>
+    <header>
+        <h1>Sisällysluettelo</h1>
+        <h2 class="page">Sivu 1</h2>
+    </header>
     <ul class="sisallysluettelo">
         <li *ngFor="let sivu of sivut; let i = index">
             <span class="nimi">{{sivu.nimi}}</span>
@@ -21,6 +24,7 @@
 <section>
     <header>
         <h1>Johdanto</h1>
+        <h2 class="page">Sivu 2</h2>
     </header>
     <p>Tämä dokummentin tarkoitus on avata kitaran soiton alkeet lukijalle sekä käydään läpi sointukulku duurissa ja mollissa.</p>
     <p>Avaamme myös soittajalle riffien maailmaa ja laulujen soittamiseen ja sanoittamiseen liittyvää tekniikkaa.</p>
@@ -28,6 +32,7 @@
 <section>
     <header>
         <h1>Sointukulku taulukko</h1>
+        <h2 class="page">Sivu 3</h2>
     </header>
     <article *ngFor="let chord of chords">
         <header><h1>{{chord.name}}</h1></header>
@@ -44,6 +49,7 @@
 <section class="chordDiagrams">
     <header>
         <h1>Otteet Duurit</h1>
+        <h2 class="page">Sivu 4</h2>
     </header>
     <article *ngFor="let chord of chords">
         <header><h1>{{chord.name}}</h1></header>
@@ -57,6 +63,7 @@
 <section class="chordDiagrams">
     <header>
         <h1>Otteet Mollit</h1>
+        <h2 class="page">Sivu 5</h2>
     </header>
     <article *ngFor="let chord of chords">
         <header><h1>{{chord.name}}</h1></header>
@@ -70,6 +77,7 @@
 <section class="chordDiagrams">
     <header>
         <h1>Riffit</h1>
+        <h2 class="page">Sivu 6</h2>
     </header>
     <div  *ngFor="let chord of chords; let itwo = index">
         <article class="full" *ngIf="itwo<=5">
@@ -88,6 +96,7 @@
 <section class="chordDiagrams">
     <header>
         <h1>Riffit</h1>
+        <h2 class="page">Sivu 7</h2>
     </header>
     <div  *ngFor="let chord of chords; let itwo = index">
         <article class="full" *ngIf="itwo>=6">
@@ -106,6 +115,7 @@
 <section class="chordDiagrams">
     <header>
         <h1>Erikois otteet</h1>
+        <h2 class="page">Sivu 8</h2>
     </header>
     <article *ngFor="let chord of specialChords">
         <header><h1>{{chord.name}}</h1></header>
@@ -119,6 +129,7 @@
 <section class="chordDiagrams">
     <header>
         <h1>Flamenko</h1>
+        <h2 class="page">Sivu 9</h2>
     </header>
     <article class="full" *ngFor="let chord of flamenkoChord">
         <header><h1>{{chord.name}}</h1></header>
@@ -132,6 +143,7 @@
 <section class="chordDiagrams">
     <header>
         <h1>Omat riffit</h1>
+        <h2 class="page">Sivu 10</h2>
     </header>
     <article class="full special" *ngFor="let chord of omatRiffit">
         <header><h1>{{chord.name}}</h1></header>
@@ -141,4 +153,68 @@
             </div>
         </div>
     </article>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Voima sointu riffit</h1>
+        <h2 class="page">Sivu 11</h2>
+    </header>
+    <div *ngFor="let chord of powerChordRiffit; let ichord = index">
+        <article class="full special" *ngIf="ichord < 3">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord.name}}">
+                <div *ngFor="let duuri of chord.chords; let i = index">
+                    <div class="{{duuri.class}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Voima sointu riffit</h1>
+        <h2 class="page">Sivu 12</h2>
+    </header>
+    <div *ngFor="let chord of powerChordRiffit; let ichord = index">
+        <article class="full special" *ngIf="ichord > 3 && ichord <= 6">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord.name}}">
+                <div *ngFor="let duuri of chord.chords; let i = index">
+                    <div class="{{duuri.class}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Voima sointu riffit</h1>
+        <h2 class="page">Sivu 13</h2>
+    </header>
+    <div *ngFor="let chord of powerChordRiffit; let ichord = index">
+        <article class="full special" *ngIf="ichord > 6 && ichord <= 9">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord.name}}">
+                <div *ngFor="let duuri of chord.chords; let i = index">
+                    <div class="{{duuri.class}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Voima sointu riffit</h1>
+        <h2 class="page">Sivu 14</h2>
+    </header>
+    <div *ngFor="let chord of powerChordRiffit; let ichord = index">
+        <article class="full special" *ngIf="ichord > 9">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord.name}}">
+                <div *ngFor="let duuri of chord.chords; let i = index">
+                    <div class="{{duuri.class}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
 </section>

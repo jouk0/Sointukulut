@@ -55,6 +55,7 @@ section {
         float: left;
         width: 100%;
         background-color: #323232;
+        position: relative;
         h1 {
             display: block;
             float: left;
@@ -71,6 +72,15 @@ section {
             width: 100%;
             color: white;
             text-align: center;
+            &.page {
+                width: 60px;
+                position: absolute;
+                right: 10px;
+                top: 8px;
+                margin: 0;
+                padding: 0;
+                font-size: 12px;
+            }
         }
         h3 {
             display: block;
