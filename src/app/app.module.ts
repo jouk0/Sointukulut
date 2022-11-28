@@ -13,6 +13,7 @@ import { FlamenkoComponent } from './flamenko/flamenko.component';
 import { OmatriffitComponent } from './omatriffit/omatriffit.component';
 import { PowerChordRiffitComponent } from './power-chord-riffit/power-chord-riffit.component';
 import { PerusSointukulutComponent } from './perus-sointukulut/perus-sointukulut.component';
+import { SanoitusOhjeComponent } from './sanoitus-ohje/sanoitus-ohje.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PerusSointukulutComponent } from './perus-sointukulut/perus-sointukulut
     FlamenkoComponent,
     OmatriffitComponent,
     PowerChordRiffitComponent,
-    PerusSointukulutComponent
+    PerusSointukulutComponent,
+    SanoitusOhjeComponent
   ],
   imports: [
     BrowserModule,
