@@ -30,6 +30,7 @@ export class EtusivuComponent implements OnInit {
       const deeMinor = document.querySelectorAll('div.deeMinor')
       const deeMinorSeven = document.querySelectorAll('div.deeMinorSeven')
       const deeCharp = document.querySelectorAll('div.deeCharp')
+      const deeCharpMinor = document.querySelectorAll('div.deeCharpMinor')
       const deeCharpSeven = document.querySelectorAll('div.deeCharpSeven')
       const deeCharpMinorSeven = document.querySelectorAll('div.deeCharpMinorSeven')
       const deeMajor7 = document.querySelectorAll('div.deeMajor7')
@@ -69,6 +70,7 @@ export class EtusivuComponent implements OnInit {
       const geeSharpMinor = document.querySelectorAll('div.geeSharpMinor')
       const geeSharpSeven = document.querySelectorAll('div.geeSharpSeven')
       const geeSharpMinorSeven = document.querySelectorAll('div.geeSharpMinorSeven')
+      const geeSharpMinorMinorSeven = document.querySelectorAll('div.geeSharpMinorMinorSeven')
       const geeMajor7 = document.querySelectorAll('div.geeMajor7')
       const geeDim = document.querySelectorAll('div.geeDim')
       const geeNine = document.querySelectorAll('div.geeNine')
@@ -83,6 +85,7 @@ export class EtusivuComponent implements OnInit {
       const aueSharpMinor = document.querySelectorAll('div.aueSharpMinor')
       const aueSharpSeven = document.querySelectorAll('div.aueSharpSeven')
       const aueSharpMinorSeven = document.querySelectorAll('div.aueSharpMinorSeven')
+      const aueSharpMinorMinorSeven = document.querySelectorAll('div.aueSharpMinorMinorSeven')
       const aueMajor7 = document.querySelectorAll('div.aueMajor7')
       const aueDim = document.querySelectorAll('div.aueDim')
       const aueNine = document.querySelectorAll('div.aueNine')
@@ -155,6 +158,9 @@ export class EtusivuComponent implements OnInit {
       })
       deeCharp.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'D#', positions: [-1, 6, 8, 8, 8, 6], dotColor: '#ff9700'})
+      })
+      deeCharpMinor.forEach((elem: any, ind:number) => {
+        chords2.push({parentElement: elem, name: 'D#m', positions: [-1, 6, 8, 8, 7, 6], dotColor: '#ff9700'})
       })
       deeCharpSeven.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'D#7', positions: [-1, 6, 8, 6, 8, 6], dotColor: '#ff9700'})
@@ -273,6 +279,9 @@ export class EtusivuComponent implements OnInit {
       geeSharpMinorSeven.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'G#m7', positions: [4, 6, 4, 4, 4, 4], dotColor: '#0000ff'})
       })
+      geeSharpMinorMinorSeven.forEach((elem: any, ind:number) => {
+        chords2.push({parentElement: elem, name: 'G#m7', positions: [4, 6, 4, 4, 4, 4], dotColor: '#0000ff'})
+      })
       geeMajor7.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'Gmaj7', positions: [-1, 2, -1, 0, 3, 2], dotColor: '#0000ff'})
       })
@@ -313,6 +322,9 @@ export class EtusivuComponent implements OnInit {
         chords2.push({parentElement: elem, name: 'A#7', positions: [6, 8, 6, 7, 6, 6], dotColor: '#9e00b3'})
       })
       aueSharpMinorSeven.forEach((elem: any, ind:number) => {
+        chords2.push({parentElement: elem, name: 'A#m7', positions: [-1, 1, 3, 1, 2, 1], dotColor: '#9e00b3'})
+      })
+      aueSharpMinorMinorSeven.forEach((elem: any, ind:number) => {
         chords2.push({parentElement: elem, name: 'A#m7', positions: [-1, 1, 3, 1, 2, 1], dotColor: '#9e00b3'})
       })
       aueMajor7.forEach((elem: any, ind:number) => {

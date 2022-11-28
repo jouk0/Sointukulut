@@ -247,13 +247,9 @@ export class SanoitusOhjeComponent {
       class: 'dee',
       color: '#ff8000'
     },{
-      name: 'D',
-      class: 'dee',
+      name: 'D#',
+      class: 'deeCharp',
       color: '#ff8000'
-    },{
-      name: 'E',
-      class: 'eee',
-      color: '#ffff00'
     },{
       name: 'F#',
       class: 'effSharp',
