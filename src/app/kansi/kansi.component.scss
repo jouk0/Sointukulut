@@ -8,6 +8,8 @@ section {
     height: auto;
     position: relative;
     overflow: hidden;
+    background: transparent url('/assets/banner.jpg') top left no-repeat;
+    background-size: cover;
     &.kansi {
         header {
             display: block;
@@ -16,7 +18,7 @@ section {
             height: 200px;
             position: absolute;
             top: 200px;
-            background-color: white;
+            background-color: rgb(255 255 255 / 68%);
             h1 {
                 display: block;
                 float: left;
@@ -25,13 +27,13 @@ section {
                 margin: 0;
                 padding: 0;
                 text-align: center;
-                color: black;
+                color: #3e3d3d;
             }
             h2 {
                 display: block;
                 float: left;
                 width: 100%;
-                color: black;
+                color: #3e3d3d;
                 text-align: center;
             }
             h3 {
@@ -39,14 +41,14 @@ section {
                 float: left;
                 width: 100%;
                 text-align: center;
-                color: black;
+                color: #3e3d3d;
             }
             h4 {
                 display: block;
                 float: left;
                 width: 100%;
                 text-align: center;
-                color: black;
+                color: #3e3d3d;
             }
         }
     }
