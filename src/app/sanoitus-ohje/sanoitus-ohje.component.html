@@ -131,10 +131,10 @@
             <header><h1>Soinnut: {{page.name}}</h1></header>
             <div class="{{page.name}}">
                 <div *ngFor="let duuri of page.duurit; let i = index">
-                    <div class="{{duuri.class}} small"></div>
+                    <div class="{{(i === 2) ? duuri.class.replace('Minor', '') + 'Seven' : duuri.class}} small"></div>
                 </div>
                 <div *ngFor="let molli of page.mollit; let i = index">
-                    <div class="{{molli.class}} small"></div>
+                    <div class="{{(i === 2) ? (!molli.class.includes('Sharp')) ? (!molli.class.includes('Minor')) ? molli.class + 'MinorSeven' : molli.class + 'Seven' : molli.class + 'MinorSeven' : (molli.class.includes('Minor')) ? molli.class : molli.class + 'Minor'}} small"></div>
                 </div>
             </div>
         </article>
@@ -150,30 +150,30 @@
         <tbody>
             <tr>
                 <td>
-                    <h2>Säkeistö A | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Säkeistö A | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{(chord.name.includes('m')) ? chord.name : chord.name + 'm'}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 5 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{(i === 2) ? chord.name.replace('m', ''): chord.name}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Säkeistö B | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Säkeistö B | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{(chord.name.includes('m')) ? chord.name : chord.name + 'm'}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 5 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{(i === 2) ? chord.name.replace('m', ''): chord.name}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
                 </td>
                 <td>
-                    <h2>Silta | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Silta | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{(chord.name.includes('m')) ? chord.name : chord.name + 'm'}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{(i === 2) ? chord.name.replace('m', ''): chord.name}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Silta | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Silta | <span *ngFor="let chord of page.mollit; let i = index"><span style="color: {{chord.color}};">{{(chord.name.includes('m')) ? chord.name : chord.name + 'm'}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{chord.name}} </span></span></h2>
+                    <h2>Kertosäe | <span *ngFor="let chord of page.duurit; let i = index"><span style="color: {{chord.color}};">{{(i === 2) ? chord.name.replace('m', ''): chord.name}}<sup *ngIf="i === 2">7</sup> </span></span></h2>
                     <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
                 </td>
