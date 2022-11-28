@@ -73,11 +73,8 @@ export class PowerChordRiffitComponent {
       name: 'A',
       class: 'aue'
     },{
-      name: 'A',
-      class: 'aue'
-    },{
-      name: 'H',
-      class: 'eich'
+      name: 'A#',
+      class: 'aueSharp'
     },{
       name: 'C',
       class: 'cee'
