@@ -10,25 +10,32 @@ export class SanoitusOhjeComponent {
     name: 'D',
     chords: [{
       name: 'D',
-      class: 'dee'
+      class: 'dee',
+      color: '#ff8000'
     }, {
       name: 'E7',
-      class: 'eeeSeven'
+      class: 'eeeSeven',
+      color: '#ffff00'
     },{
-      name: 'Emaj7',
-      class: 'eeeMajor7'
+      name: 'Fmaj7',
+      class: 'effMajor7',
+      color: '#ffff00'
     },{
       name: 'Am',
-      class: 'aueMinor'
+      class: 'aueMinor',
+      color: '#4c00db'
     },{
       name: 'A#',
-      class: 'aueSharpMinorSeven'
+      class: 'aueSharpMinorSeven',
+      color: '#9e00b3'
     },{
       name: 'Hm7',
-      class: 'eichMinorSeven'
+      class: 'eichMinorSeven',
+      color: '#ff0075'
     },{
       name: 'C#maj7',
-      class: 'ceeSharpMajor7'
+      class: 'ceeSharpMajor7',
+      color: '#ff5b22'
     }]
   }]
 }

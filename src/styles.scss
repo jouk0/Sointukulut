@@ -13,11 +13,15 @@ html, body {
     margin: 10px;
     border-radius: 10px;
 }
-
-#chordArea2 canvas {
-    max-height: 120px;
+div {
+    &.small {
+        
+        canvas.chord-diagram {
+            max-height: 100px;
+        }
+    }
 }
-
+        
 canvas.chord-diagram {
     max-height: 115px;
 }

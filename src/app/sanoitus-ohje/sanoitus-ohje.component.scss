@@ -67,13 +67,13 @@ section {
                 div {
                     display: block;
                     float: left;
-                    width: 115px;
-                    height: 115px;
+                    width: 100px;
+                    height: 100px;
                     div {
                         display: block;
                         float: left;
-                        width: 115px;
-                        height: 115px;
+                        width: 100px;
+                        height: 100px;
                     }
                 }
             }
@@ -86,10 +86,11 @@ section {
         height: 180px;
         border: 1px solid grey;
         padding: 10px;
+        margin-bottom: 10px;
         &.full {
             width: 100%;
             &.special {
-                height: 310px;
+                height: 170px;
             }
         }
         &:last-child {
@@ -148,14 +149,72 @@ section {
             width: 49%;
         }
     }
+    h2 {
+        display: block;
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+    }
     table {
         width: 100%;
+        padding: 0 20px;
+        &.template {
+            tbody {
+                tr {
+                    td {
+                        width: 50%;
+                        border-right: 1px solid #323232;
+                        border-bottom: 1px solid #323232;
+                        padding: 10px;
+                        &:nth-of-type(1) {
+                            border-left: 1px solid #323232;
+                        }
+                        h2 {
+                            display: block;
+                            float: left;
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                            text-align: center;
+                            div {
+                                display: inline;
+                                background-color: #323232;
+                                padding: 0 20px 5px;
+                                height: 20px;
+                                span {
+                                    display: inline;
+                                    span {
+                                        display: inline;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        h3 {
+                            display: block;
+                            float: left;
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                            text-align: center;
+                        }
+                        p {
+                            min-height: 140px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
         thead {
             tr {
                 th {
                     width: 50%;
                     border-bottom: 1px solid #323232;
                     border-right: 1px solid #323232;
+                    border-top: 1px solid #323232;
                     height: 40px;
                     line-height: 40px;
                     &:nth-of-type(1) {
@@ -183,11 +242,15 @@ section {
                         text-align: center;
                         div {
                             display: inline;
+                            background-color: #323232;
+                            padding: 0 20px 5px;
+                            height: 20px;
                             span {
                                 display: inline;
                                 span {
                                     display: inline;
-
+                                    font-size: 16px;
+                                    line-height: 20px;
                                 }
                             }
                         }

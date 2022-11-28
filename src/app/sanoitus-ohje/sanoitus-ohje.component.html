@@ -1,6 +1,6 @@
 <section class="chordDiagrams">
     <header>
-        <h1>Sanoitukset</h1>
+        <h1>Sanoitukset esimerkki</h1>
         <h2 class="page">Sivu 15</h2>
     </header>
     <div *ngFor="let chord of powerChordRiffit; let ichord = index">
@@ -13,6 +13,7 @@
             </div>
         </article>
     </div>
+    <h2>Sanoituksen runko</h2>
     <table [cellSpacing]="0" [cellPadding]="0">
         <thead>
             <tr>
@@ -23,39 +24,96 @@
         <tbody>
             <tr>
                 <td>
-                    <h2>Säkeistö A - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Säkeistö A | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
                     <p>Kuvaus tilanteesta eli mitä tehdään ja missä.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
                     <h3>Instrumentaali osuus: 5 sec</h3>
-                    <h2>Kertosäe - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i > 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
                     <p>Rimmaavia lauseita tarinasta.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Säkeistö B - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Säkeistö B | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
                     <p>Kerro tarinaa tässä ja avaa kuuntelijalle biisiä enemmän.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
                     <h3>Instrumentaali osuus: 5 sec</h3>
-                    <h2>Kertosäe - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i > 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
                     <p>Rimmaavia lauseita tarinasta.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
                 </td>
                 <td>
-                    <h2>Silta - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Silta | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
                     <p>Kuvaus miten kaikki korjataan.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Kertosäe - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i > 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
                     <p>Rimmaavia lauseita tarinasta.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Silta - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Silta | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
                     <p>Kuvaus miten kaikki korjataan.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
-                    <h2>Kertosäe - <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span *ngIf="i > 3">{{chord.name}} </span></span></div></h2>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
                     <p>Rimmaavia lauseita tarinasta.</p>
                     <p>Tämä osuus on neljä lausetta pitkä.</p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Sanoitukset esimerkki</h1>
+        <h2 class="page">Sivu 15</h2>
+    </header>
+    <div *ngFor="let chord of powerChordRiffit; let ichord = index">
+        <article class="full special" *ngIf="ichord < 3">
+            <header><h1>Soinnut: {{chord.name}}</h1></header>
+            <div class="{{chord.name}}">
+                <div *ngFor="let duuri of chord.chords; let i = index">
+                    <div class="{{duuri.class}} small"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <h2>Sanoituksen runko</h2>
+    <table [cellSpacing]="0" [cellPadding]="0" class="template">
+        <thead>
+            <tr>
+                <th>Alku</th>
+                <th>Loppu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h2>Säkeistö A | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 5 sec</h3>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Säkeistö B | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 5 sec</h3>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                </td>
+                <td>
+                    <h2>Silta | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Silta | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i < 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
+                    <h3>Instrumentaali osuus: 10 sec</h3>
+                    <h2>Kertosäe | <div *ngFor="let sointu of powerChordRiffit"><span *ngFor="let chord of sointu.chords; let i = index"><span style="color: {{chord.color}};" *ngIf="i >= 3">{{chord.name}} </span></span></div></h2>
+                    <p></p>
                     <h3>Instrumentaali osuus: 10 sec</h3>
                 </td>
             </tr>
