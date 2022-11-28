@@ -181,6 +181,16 @@ section {
                         margin: 0;
                         padding: 0;
                         text-align: center;
+                        div {
+                            display: inline;
+                            span {
+                                display: inline;
+                                span {
+                                    display: inline;
+
+                                }
+                            }
+                        }
                     }
                     h3 {
                         display: block;

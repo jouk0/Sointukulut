@@ -19,7 +19,7 @@ export class OmatriffitComponent {
       name: 'Emaj7',
       class: 'eeeMajor7'
     },{
-      name: 'A',
+      name: 'Am',
       class: 'aueMinor'
     },{
       name: 'A#',

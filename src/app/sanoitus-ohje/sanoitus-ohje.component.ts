@@ -10,15 +10,15 @@ export class SanoitusOhjeComponent {
     name: 'D',
     chords: [{
       name: 'D',
-      class: 'deeCharp'
+      class: 'dee'
     }, {
-      name: 'D#',
-      class: 'deeSeven'
+      name: 'E7',
+      class: 'eeeSeven'
     },{
       name: 'Emaj7',
       class: 'eeeMajor7'
     },{
-      name: 'A',
+      name: 'Am',
       class: 'aueMinor'
     },{
       name: 'A#',
