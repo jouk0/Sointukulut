@@ -177,18 +177,17 @@ section {
                             margin: 0;
                             padding: 0;
                             text-align: center;
-                            div {
+                            span {
                                 display: inline;
                                 background-color: #323232;
-                                padding: 0 20px 5px;
+                                padding: 0 0 5px;
                                 height: 20px;
+                                width: 50px;
                                 span {
                                     display: inline;
-                                    span {
-                                        display: inline;
-                                        font-size: 16px;
-                                        line-height: 20px;
-                                    }
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color:white;
                                 }
                             }
                         }
