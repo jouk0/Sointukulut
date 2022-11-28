@@ -1,0 +1,83 @@
+<section>
+    <header>
+        <h1>Sointukulku taulukko</h1>
+        <h2 class="page">Sivu 3</h2>
+    </header>
+    <article *ngFor="let chord of chords">
+        <header><h1>{{chord.name}}</h1></header>
+        <h2>Duurit</h2>
+        <div *ngFor="let duurit of chord.duurit; let i = index">
+            <span>{{(i === 2) ? duurit.name.replace('m', ''): duurit.name}}<sup *ngIf="i === 2">7</sup></span>
+        </div>
+        <h2>Mollit</h2>
+        <div *ngFor="let mollit of chord.mollit; let i = index">
+            <span>{{(mollit.name.includes('m')) ? mollit.name : mollit.name + 'm'}}<sup *ngIf="i === 2">7</sup></span>
+        </div>
+    </article>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Otteet Duurit</h1>
+        <h2 class="page">Sivu 4</h2>
+    </header>
+    <article *ngFor="let chord of chords">
+        <header><h1>{{chord.name}}</h1></header>
+        <div class="{{chord}}">
+            <div *ngFor="let duuri of chord.duurit; let i = index">
+                <div class="{{(i === 2) ? duuri.class.replace('Minor', '') + 'Seven' : duuri.class}}"></div>
+            </div>
+        </div>
+    </article>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Otteet Mollit</h1>
+        <h2 class="page">Sivu 5</h2>
+    </header>
+    <article *ngFor="let chord of chords">
+        <header><h1>{{chord.name}}</h1></header>
+        <div class="{{chord}}">
+            <div *ngFor="let duuri of chord.mollit; let i = index">
+                <div class="{{(i === 2) ? (!duuri.class.includes('Sharp')) ? (!duuri.class.includes('Minor')) ? duuri.class + 'MinorSeven' : duuri.class + 'Seven' : duuri.class + 'MinorSeven' : (duuri.class.includes('Minor')) ? duuri.class : duuri.class + 'Minor'}}"></div>
+            </div>
+        </div>
+    </article>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Riffit</h1>
+        <h2 class="page">Sivu 6</h2>
+    </header>
+    <div  *ngFor="let chord of chords; let itwo = index">
+        <article class="full" *ngIf="itwo<=5">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord}}">
+                <div *ngFor="let duuri of chord.duurit; let i = index">
+                    <div class="{{(i === 2) ? duuri.class.replace('Minor', '') + 'Seven' : duuri.class}}"></div>
+                </div>
+                <div *ngFor="let duuri of chord.mollit; let i = index">
+                    <div class="{{(i === 2) ? (!duuri.class.includes('Sharp')) ? (!duuri.class.includes('Minor')) ? duuri.class + 'MinorSeven' : duuri.class + 'Seven' : duuri.class + 'MinorSeven' : (duuri.class.includes('Minor')) ? duuri.class : duuri.class + 'Minor'}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="chordDiagrams">
+    <header>
+        <h1>Riffit</h1>
+        <h2 class="page">Sivu 7</h2>
+    </header>
+    <div  *ngFor="let chord of chords; let itwo = index">
+        <article class="full" *ngIf="itwo>=6">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord}}">
+                <div *ngFor="let duuri of chord.duurit; let i = index">
+                    <div class="{{(i === 2) ? duuri.class.replace('Minor', '') + 'Seven' : duuri.class}}"></div>
+                </div>
+                <div *ngFor="let duuri of chord.mollit; let i = index">
+                    <div class="{{(i === 2) ? (!duuri.class.includes('Sharp')) ? (!duuri.class.includes('Minor')) ? duuri.class + 'MinorSeven' : duuri.class + 'Seven' : duuri.class + 'MinorSeven' : (duuri.class.includes('Minor')) ? duuri.class : duuri.class + 'Minor'}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>

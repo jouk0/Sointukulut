@@ -1,0 +1,12 @@
+<section>
+    <header>
+        <h1>Sisällysluettelo</h1>
+        <h2 class="page">Sivu 1</h2>
+    </header>
+    <ul class="sisallysluettelo">
+        <li *ngFor="let sivu of sivut; let i = index">
+            <span class="nimi">{{sivu.nimi}}</span>
+            <span class="sivunumero"><strong>Sivu:</strong> {{sivu.sivut}}</span>
+        </li>
+    </ul>
+</section>

@@ -1,0 +1,14 @@
+<section class="chordDiagrams">
+    <header>
+        <h1>Omat riffit</h1>
+        <h2 class="page">Sivu 10</h2>
+    </header>
+    <article class="full special" *ngFor="let chord of omatRiffit">
+        <header><h1>{{chord.name}}</h1></header>
+        <div class="{{chord.name}}">
+            <div *ngFor="let duuri of chord.chords; let i = index">
+                <div class="{{duuri.class}}"></div>
+            </div>
+        </div>
+    </article>
+</section>

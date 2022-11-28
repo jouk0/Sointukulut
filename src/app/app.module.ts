@@ -5,11 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EtusivuComponent } from './etusivu/etusivu.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { KansiComponent } from './kansi/kansi.component';
+import { SisallysluetteloComponent } from './sisallysluettelo/sisallysluettelo.component';
+import { JohdantoComponent } from './johdanto/johdanto.component';
+import { ErikoisotteetComponent } from './erikoisotteet/erikoisotteet.component';
+import { FlamenkoComponent } from './flamenko/flamenko.component';
+import { OmatriffitComponent } from './omatriffit/omatriffit.component';
+import { PowerChordRiffitComponent } from './power-chord-riffit/power-chord-riffit.component';
+import { PerusSointukulutComponent } from './perus-sointukulut/perus-sointukulut.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EtusivuComponent
+    EtusivuComponent,
+    KansiComponent,
+    SisallysluetteloComponent,
+    JohdantoComponent,
+    ErikoisotteetComponent,
+    FlamenkoComponent,
+    OmatriffitComponent,
+    PowerChordRiffitComponent,
+    PerusSointukulutComponent
   ],
   imports: [
     BrowserModule,
