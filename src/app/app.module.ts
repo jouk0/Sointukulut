@@ -1,5 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxEditorModule } from 'ngx-editor';
+import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,8 @@ import { OmatriffitComponent } from './omatriffit/omatriffit.component';
 import { PowerChordRiffitComponent } from './power-chord-riffit/power-chord-riffit.component';
 import { PerusSointukulutComponent } from './perus-sointukulut/perus-sointukulut.component';
 import { SanoitusOhjeComponent } from './sanoitus-ohje/sanoitus-ohje.component';
+import { SkaalatComponent } from './skaalat/skaalat.component';
+import { SanoitusKoneComponent } from './sanoitus-kone/sanoitus-kone.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,9 @@ import { SanoitusOhjeComponent } from './sanoitus-ohje/sanoitus-ohje.component';
     OmatriffitComponent,
     PowerChordRiffitComponent,
     PerusSointukulutComponent,
-    SanoitusOhjeComponent
+    SanoitusOhjeComponent,
+    SkaalatComponent,
+    SanoitusKoneComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,9 @@ import { SanoitusOhjeComponent } from './sanoitus-ohje/sanoitus-ohje.component';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    NgxEditorModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

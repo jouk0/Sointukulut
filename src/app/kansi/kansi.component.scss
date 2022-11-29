@@ -19,15 +19,18 @@ section {
             position: absolute;
             top: 200px;
             background-color: rgb(255 255 255 / 68%);
+            padding: 20px 0;
             h1 {
                 display: block;
                 float: left;
                 width: 100%;
                 line-height: 30px;
-                margin: 0;
+                margin: 10px 0;
                 padding: 0;
                 text-align: center;
                 color: #3e3d3d;
+                font-weight: bold;
+                border-bottom: 1px solid #3e3d3d;
             }
             h2 {
                 display: block;
@@ -35,6 +38,8 @@ section {
                 width: 100%;
                 color: #3e3d3d;
                 text-align: center;
+                margin: 10px 0;
+                font-weight: normal;
             }
             h3 {
                 display: block;
@@ -42,6 +47,8 @@ section {
                 width: 100%;
                 text-align: center;
                 color: #3e3d3d;
+                margin: 10px 0;
+                font-weight: normal;
             }
             h4 {
                 display: block;
@@ -49,6 +56,8 @@ section {
                 width: 100%;
                 text-align: center;
                 color: #3e3d3d;
+                margin: 10px 0;
+                font-weight: normal;
             }
         }
     }
