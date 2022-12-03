@@ -1,1 +1,14 @@
-<p>jukan works!</p>
+<section class="chordDiagrams">
+    <header>
+        <h1>Jukan</h1>
+        <h2 class="page">Sivu 38</h2>
+    </header>
+    <article class="full" *ngFor="let chord of flamenkoChord">
+        <header><h1>{{chord.name}}</h1></header>
+        <div class="{{chord.name}}">
+            <div *ngFor="let duuri of chord.chords; let i = index">
+                <div class="{{duuri.class}}"></div>
+            </div>
+        </div>
+    </article>
+</section>

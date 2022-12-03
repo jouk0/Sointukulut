@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class JukanComponent {
 
+  public flamenkoChord: Array<any> = [{
+    name: 'Em',
+    chords: [{
+      name: 'Em',
+      class: 'eeeMinor'
+    },{
+      name: 'Fm',
+      class: 'effMinor'
+    },{
+      name: 'F#maj7',
+      class: 'effSharpMajor7'
+    },{
+      name: 'G7',
+      class: 'geeSeven'
+    },{
+      name: 'A<sub>b</sub>',
+      class: 'aueSeven'
+    },{
+      name: 'H',
+      class: 'eichSeven'
+    }]
+  }]
 }
