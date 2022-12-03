@@ -57,6 +57,7 @@ section {
         margin: 10px 1% 0 1%;
         font-size: 16px;
         border: 1px solid grey;
+        min-height: 100px;
         &:nth-of-type(2n+2) {
             margin: 10px 1% 0 0;
             width: 49%;

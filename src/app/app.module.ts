@@ -18,6 +18,7 @@ import { PerusSointukulutComponent } from './perus-sointukulut/perus-sointukulut
 import { SanoitusOhjeComponent } from './sanoitus-ohje/sanoitus-ohje.component';
 import { SkaalatComponent } from './skaalat/skaalat.component';
 import { SanoitusKoneComponent } from './sanoitus-kone/sanoitus-kone.component';
+import { JukanComponent } from './jukan/jukan.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SanoitusKoneComponent } from './sanoitus-kone/sanoitus-kone.component';
     PerusSointukulutComponent,
     SanoitusOhjeComponent,
     SkaalatComponent,
-    SanoitusKoneComponent
+    SanoitusKoneComponent,
+    JukanComponent
   ],
   imports: [
     BrowserModule,
