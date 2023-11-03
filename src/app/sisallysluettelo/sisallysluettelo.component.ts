@@ -44,7 +44,10 @@ export class SisallysluetteloComponent {
     nimi: 'Jukan',
     sivut: '38'
   },{
-    nimi: 'Uudet riffit',
+    nimi: 'Uudet riffit + Duurit',
     sivut: '39-40'
+  },{
+    nimi: 'Uudet riffit + Mollit',
+    sivut: '41-42'
   }]
 }
