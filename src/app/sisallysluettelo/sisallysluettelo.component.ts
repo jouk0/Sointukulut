@@ -40,5 +40,11 @@ export class SisallysluetteloComponent {
   },{
     nimi: 'Sanoitukset ohjeet ja sapluunat',
     sivut: '13-37'
+  },{
+    nimi: 'Jukan',
+    sivut: '38'
+  },{
+    nimi: 'Uudet riffit',
+    sivut: '39-40'
   }]
 }

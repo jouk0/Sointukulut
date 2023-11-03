@@ -19,6 +19,7 @@ import { SanoitusOhjeComponent } from './sanoitus-ohje/sanoitus-ohje.component';
 import { SkaalatComponent } from './skaalat/skaalat.component';
 import { SanoitusKoneComponent } from './sanoitus-kone/sanoitus-kone.component';
 import { JukanComponent } from './jukan/jukan.component';
+import { UudetRiffitComponent } from './uudet-riffit/uudet-riffit.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { JukanComponent } from './jukan/jukan.component';
     SanoitusOhjeComponent,
     SkaalatComponent,
     SanoitusKoneComponent,
-    JukanComponent
+    JukanComponent,
+    UudetRiffitComponent
   ],
   imports: [
     BrowserModule,
