@@ -13,7 +13,7 @@
     </article-->
 
     <div  *ngFor="let chord of chords; let itwo = index">
-        <article class="full" *ngIf="itwo<=6">
+        <article class="full" *ngIf="itwo<6">
             <header><h1>{{chord.name}}</h1></header>
             <div class="{{chord}}">
                 <div *ngFor="let duuri of chord.duurit; let i = index">
