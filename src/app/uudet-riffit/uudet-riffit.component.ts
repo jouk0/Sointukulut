@@ -411,6 +411,12 @@ export class UudetRiffitComponent {
             elem.duurit.push(this.allChords[ind2+10])
             elem.duurit.push(this.allChords[ind2+16])
             elem.duurit.push(this.allChords[ind2+20])
+
+            elem.mollit.push(this.allChords[ind2-5])
+            elem.mollit.push(this.allChords[ind2+1])
+            elem.mollit.push(this.allChords[ind2+5])
+            elem.mollit.push(this.allChords[ind2+11])
+            elem.mollit.push(this.allChords[ind2+15])
           }
         }
       })

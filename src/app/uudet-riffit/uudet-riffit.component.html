@@ -1,17 +1,8 @@
 <section class="chordDiagrams">
     <header>
-        <h1>Uudet Riffit</h1>
+        <h1>Uudet Riffit + Duurit</h1>
         <h2 class="page">Sivu 39</h2>
     </header>
-    <!--article class="full" *ngFor="let chord of data">
-        <header><h1>{{chord.name}}</h1></header>
-        <div class="{{chord.name}}">
-            <div *ngFor="let duuri of chord.duurit; let i = index">
-                <div class="{{duuri.class}}"></div>
-            </div>
-        </div>
-    </article-->
-
     <div  *ngFor="let chord of chords; let itwo = index">
         <article class="full" *ngIf="itwo<6">
             <header><h1>{{chord.name}}</h1></header>
@@ -23,9 +14,10 @@
         </article>
     </div>
 </section>
+
 <section class="chordDiagrams">
     <header>
-        <h1>Uudet Riffit</h1>
+        <h1>Uudet Riffit + Duurit</h1>
         <h2 class="page">Sivu 40</h2>
     </header>
     <div  *ngFor="let chord of chords; let itwo = index">
@@ -34,6 +26,40 @@
             <div class="{{chord}}">
                 <div *ngFor="let duuri of chord.duurit; let i = index">
                     <div class="{{(i === 2) ? duuri.class.replace('Minor', '') + 'Seven' : duuri.class}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="chordDiagrams">
+    <header>
+        <h1>Uudet Riffit + Mollit</h1>
+        <h2 class="page">Sivu 41</h2>
+    </header>
+    <div  *ngFor="let chord of chords; let itwo = index">
+        <article class="full" *ngIf="itwo>=6">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord}}">
+                <div *ngFor="let duuri of chord.mollit; let i = index">
+                    <div class="{{duuri.class}}"></div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="chordDiagrams">
+    <header>
+        <h1>Uudet Riffit + Mollit</h1>
+        <h2 class="page">Sivu 42</h2>
+    </header>
+    <div  *ngFor="let chord of chords; let itwo = index">
+        <article class="full" *ngIf="itwo>=6">
+            <header><h1>{{chord.name}}</h1></header>
+            <div class="{{chord}}">
+                <div *ngFor="let duuri of chord.mollit; let i = index">
+                    <div class="{{duuri.class}}"></div>
                 </div>
             </div>
         </article>
