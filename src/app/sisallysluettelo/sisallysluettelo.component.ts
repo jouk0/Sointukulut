@@ -24,7 +24,7 @@ export class SisallysluetteloComponent {
     sivut: '5'
   },{
     nimi: 'Riffit',
-    sivut: '6-7'
+    sivut: '6 - 7'
   },{
     nimi: 'Erikois otteet',
     sivut: '8'
@@ -36,18 +36,36 @@ export class SisallysluetteloComponent {
     sivut: '10'
   },{
     nimi: 'Voima sointu riffit',
-    sivut: '11-12'
+    sivut: '11 - 12'
   },{
     nimi: 'Sanoitukset ohjeet ja sapluunat',
-    sivut: '13-37'
+    sivut: '13 - 37'
   },{
     nimi: 'Jukan',
     sivut: '38'
   },{
     nimi: 'Uudet riffit + Duurit',
-    sivut: '39-40'
+    sivut: '39 - 40'
   },{
     nimi: 'Uudet riffit + Mollit',
-    sivut: '41-42'
+    sivut: '41 - 42'
+  },{
+    nimi: 'AHDCH + Duurit',
+    sivut: '43 - 44'
+  },{
+    nimi: 'AHDCH + Mollit',
+    sivut: '44 - 46'
+  },{
+    nimi: 'EAHCSharp + Duurit',
+    sivut: '47 - 48'
+  },{
+    nimi: 'EAHCSharp + Mollit',
+    sivut: '49 - 50'
+  },{
+    nimi: 'EG#A#CD# + Duurit',
+    sivut: '51 - 52'
+  },{
+    nimi: 'EG#A#CD# + Mollit',
+    sivut: '53 - 54'
   }]
 }

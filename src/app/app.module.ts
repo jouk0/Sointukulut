@@ -20,6 +20,9 @@ import { SkaalatComponent } from './skaalat/skaalat.component';
 import { SanoitusKoneComponent } from './sanoitus-kone/sanoitus-kone.component';
 import { JukanComponent } from './jukan/jukan.component';
 import { UudetRiffitComponent } from './uudet-riffit/uudet-riffit.component';
+import { AhdchComponent } from './ahdch/ahdch.component';
+import { EahcsharpComponent } from './eahcsharp/eahcsharp.component';
+import { EgSharpAsharpCDSharpComponent } from './eg-sharp-asharp-cdsharp/eg-sharp-asharp-cdsharp.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { UudetRiffitComponent } from './uudet-riffit/uudet-riffit.component';
     SkaalatComponent,
     SanoitusKoneComponent,
     JukanComponent,
-    UudetRiffitComponent
+    UudetRiffitComponent,
+    AhdchComponent,
+    EahcsharpComponent,
+    EgSharpAsharpCDSharpComponent
   ],
   imports: [
     BrowserModule,
